@@ -2,8 +2,8 @@ import React from 'react';
 
 const ErrorExample = () => {
   
-  var title = 'Default Title';
-  var handlerClick = () => {
+  const title = 'Default Title';
+  const handlerClick = () => {
     title = 'New Title';
     console.log(title);
   }
