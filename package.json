@@ -1,0 +1,13 @@
+{
+  "name": "ytcustomsearch",
+  "version": "1.0.0",
+  "description": "React",
+  "main": "",
+  "scripts": {
+  },
+  "author": "Tony DG",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.6.0"
+  }
+}
