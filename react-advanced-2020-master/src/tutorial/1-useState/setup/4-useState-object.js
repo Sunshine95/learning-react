@@ -10,6 +10,9 @@ const UseStateObject = () => {
   });
 
   const handleClick = () => {
+    // why not person.quote = 'yada yada'
+    // it is important to perseve values
+    // in most cases.
     setPerson({ ...person, quote:'Farewell!'});
   }
 
