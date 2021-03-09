@@ -46,6 +46,7 @@ const ControlledInputs = () => {
               name="firstName"
               value={person.firstName}
               onChange={handleChange}
+              required
             />
           </div>
           <div className="form-control">
@@ -56,12 +57,14 @@ const ControlledInputs = () => {
               name="email"
               value={person.email}
               onChange={handleChange}
+              required
             />
           </div>
           <div className="form-control">
             <label htmlFor="age">Age : </label>
             <input
-              type="numer"
+              type="number"
+              min="13"
               id="age"
               name="age"
               value={person.age}
