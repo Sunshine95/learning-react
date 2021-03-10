@@ -44,6 +44,7 @@ const ControlledInputs = () => {
               type="text"
               id="firstName"
               name="firstName"
+              placeholder="johnny doe"
               value={person.firstName}
               onChange={handleChange}
               required
@@ -55,6 +56,7 @@ const ControlledInputs = () => {
               type="email"
               id="email"
               name="email"
+              placeholder='johnny.doe@mail'
               value={person.email}
               onChange={handleChange}
               required
@@ -67,6 +69,7 @@ const ControlledInputs = () => {
               min="13"
               id="age"
               name="age"
+              placeholder='13+'
               value={person.age}
               onChange={handleChange}
             />
