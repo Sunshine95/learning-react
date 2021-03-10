@@ -15,7 +15,7 @@ export const useFetch = (url) => {
                 throw new Error(response.statusText);
             }
         })
-        .then((productList) =>{
+        .then((products) =>{
             setLoading(false);
             setProducts(products);
         })
