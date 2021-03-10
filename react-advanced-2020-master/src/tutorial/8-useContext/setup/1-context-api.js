@@ -7,37 +7,40 @@ const PersonContext = React.createContext();
 
 const ContextAPI = () => {
   const [people, setPeople] = useState(data);
+  
   const removePerson = (id) => {
     setPeople((people) => {
       return people.filter((person) => person.id !== id);
     });
   };
+  
   return (
-    <PersonContext.Provider value={{removePerson}}>
+    <PersonContext.Provider value={{people, removePerson}}>
       <h3>prop drilling</h3>
-      <List people={people} />
+      <List/>
     </PersonContext.Provider>
   );
 };
 
-const List = ({ people }) => {
+const List = () => {
+  
+  const {people} = useContext(PersonContext);
+  console.log(people)
   return (
     <>
       {people.map((person) => {
         return (
-          <SinglePerson
-            key={person.id}
-            {...person}
-            />
+          <SinglePerson key={person.id} {...person}/>
         );
       })}
     </>
   );
 };
 
-const SinglePerson = ({ id, name }) => {
+const SinglePerson = ({id, name}) => {
   
   const {removePerson} = useContext(PersonContext);
+  console.log(id, name);
 
   return (
     <div className='item'>

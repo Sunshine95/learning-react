@@ -5,7 +5,7 @@ import Final from './tutorial/8-useContext/final/1-context-api'
 function App() {
   return (
     <div className='container'>
-      <Final />
+      <Setup />
     </div>
   )
 }
