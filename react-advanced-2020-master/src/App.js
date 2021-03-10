@@ -1,6 +1,6 @@
 import React from 'react'
-import Setup from './tutorial/10-prop-types/setup/'
-import Final from './tutorial/10-prop-types/final/'
+import Setup from './tutorial/11-react-router/setup/'
+import Final from './tutorial/11-react-router/final/'
 
 function App() {
   return (
