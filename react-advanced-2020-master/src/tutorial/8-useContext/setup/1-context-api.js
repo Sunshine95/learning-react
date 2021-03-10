@@ -25,7 +25,6 @@ const ContextAPI = () => {
 const List = () => {
   
   const {people} = useContext(PersonContext);
-  console.log(people)
   return (
     <>
       {people.map((person) => {
@@ -40,7 +39,6 @@ const List = () => {
 const SinglePerson = ({id, name}) => {
   
   const {removePerson} = useContext(PersonContext);
-  console.log(id, name);
 
   return (
     <div className='item'>
